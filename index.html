@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <title>Array Methods in Javascript</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center pt-5">
+          <button type="button" class="btn btn-primary" id="getArr">Get</button>
+          <button type="button" class="btn btn-secondary" id="pushArr">
+            Push
+          </button>
+          <button type="button" class="btn btn-dark" id="unshiftArr">
+            Unshift
+          </button>
+          <button type="button" class="btn btn-light" id="shiftArr">
+            Shift
+          </button>
+          <button type="button" class="btn btn-success" id="splitString">
+            Split
+          </button>
+          <button type="button" class="btn btn-danger" id="spliceArr">
+            Splice
+          </button>
+          <button type="button" class="btn btn-warning" id="sortArr">
+            Sort
+          </button>
+          <button type="button" class="btn btn-info" id="filterArr">
+            Filter
+          </button>
+          <button type="button" class="btn btn-light" id="mapArr">Map</button>
+          <button type="button" class="btn btn-dark" id="popArr">Pop</button>
+          <button type="button" class="btn btn-info" id="joinArr">Join</button>
+          <button type="button" class="btn btn-danger" id="arrToString">
+            toString
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center pt-5">
+          <input type="text" id="nameToSearch" />
+          <input type="text" id="nameToSearch1" />
+          <input type="text" id="nameToSearch2" />
+        </div>
+      </div>
+      <div class="row">
+        <ul class="list-group">
+          <li class="list-group-item text-center">
+            Array Methods in Javascript
+          </li>
+          <a class="btn btn-secondary" href="https://www.w3schools.com/jsref/jsref_push.asp">Push</a> 
+          <li class="list-group-item list-group-item-secondary mb-5">
+            The <strong>push()</strong> method adds new items to the end of an
+            array. The <strong>push()</strong> method changes the length of the
+            array. <strong>push()</strong> method returns the new length.
+          </li>
+          
+           <a class="btn btn-dark" href="https://www.w3schools.com/jsref/jsref_unshift.asp">Unshift</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The <strong>unshift()</strong> method adds new elements to the beginning of an array.
+
+The unshift() method overwrites the original array.
+          </li>
+          <a class="btn btn-light" href="https://www.w3schools.com/jsref/jsref_shift.asp">Shift</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The <strong>shift()</strong> method removes the first item of an array.
+
+The <strong>shift()</strong>  method changes the original array.
+
+The <strong>shift()</strong>  method returns the shifted element.
+          </li>
+          <a class="btn btn-success" href="https://www.w3schools.com/jsref/jsref_split.asp">Split</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The <strong>split()</strong> method splits a string into an array of substrings.
+
+The <strong>split()</strong> method returns the new array.
+
+The <strong>split()</strong> method does not change the original string.
+
+If (" ") is used as separator, the string is split between words.
+          </li>
+          <a class="btn btn-danger" href="https://www.w3schools.com/jsref/jsref_splice.asp">Splice</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The <strong>splice()</strong> method adds and/or removes array elements.
+
+The <strong>splice()</strong> method overwrites the original array.
+
+Syntax
+<strong>array.splice(index, howmany, item1, ....., itemX)</strong>
+          </li>
+          <a class="btn btn-warning" href="https://www.w3schools.com/js/js_array_sort.asp">Sort</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The <strong>sort()</strong> method sorts an array alphabetically:
+
+
+            To compare numbers instead of strings, the compare function can subtract b from a. 
+
+
+
+
+
+          </li>
+          <a class="btn btn-info" href="https://www.w3schools.com/jsref/jsref_filter.asp">Filter</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The <strong>filter()</strong> method creates a new array filled with elements that pass a test provided by a function.
+
+The <strong>filter()</strong> method does not execute the function for empty elements.
+
+The <strong>filter()</strong> method does not change the original array.
+
+
+
+
+
+
+          </li>
+          <a class="btn btn-light" href="https://www.w3schools.com/jsref/jsref_map.asp">Map</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            <strong>map()</strong> creates a new array from calling a function for every array element.
+
+            <strong>map()</strong> does not execute the function for empty elements.
+            
+            <strong>map()</strong> does not change the original array.
+
+
+
+
+
+          </li>
+          <a class="btn btn-dark" href="https://www.w3schools.com/jsref/jsref_pop.asp">Pop</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The pop() method removes (pops) the last element of an array.
+
+The pop() method changes the original array.
+
+The pop() method returns the removed element.
+
+
+
+          </li>
+          <a class="btn btn-info" href="https://www.w3schools.com/jsref/jsref_join.asp">Join</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The join() method returns an array as a string.
+
+The join() method does not change the original array.
+
+Any separator can be specified. The default is comma (,).
+
+
+
+
+          </li>
+          <a class="btn btn-danger" href="https://www.w3schools.com/jsref/jsref_tostring_number.asp">ToString</a> 
+       
+          <li class="list-group-item list-group-item-dark mb-5">
+            The toString() returns a number as a string.
+
+
+
+
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
